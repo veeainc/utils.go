@@ -1,4 +1,4 @@
-module bitbucket.org/boolangery/corelib.go
+module bitbucket.org/veeafr/utils.go
 
 go 1.13
 

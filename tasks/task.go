@@ -1,7 +1,7 @@
 package tasks
 
 import (
-	"bitbucket.org/boolangery/corelib.go/logging"
+	"bitbucket.org/veeafr/utils.go/logging"
 	"errors"
 	"sync"
 )

@@ -1,7 +1,7 @@
 package utils
 
 import (
-	"bitbucket.org/boolangery/corelib.go/logging"
+	"bitbucket.org/veeafr/utils.go/logging"
 	"fmt"
 	"github.com/pkg/errors"
 	"reflect"
