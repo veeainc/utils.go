@@ -1,4 +1,4 @@
-package utils
+package retryables
 
 import (
 	"bitbucket.org/veeafr/utils.go/logging"
