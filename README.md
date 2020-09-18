@@ -4,6 +4,7 @@ A collection of Go utility packages.
 
 See below for mode details:
 
+* [files](files/README.md)
 * [interfaces](interfaces/README.md)
 * [logging](logging/README.md)
 * [retryables](retryables/README.md)
