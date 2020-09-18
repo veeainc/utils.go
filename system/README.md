@@ -1,23 +1,14 @@
-# types
+# system
 
 ```go
-import "bitbucket.org/veeafr/utils.go/types"
+import "bitbucket.org/veeafr/utils.go/system"
 ```
 
 
 ```go
-// Check if its a slice.
-func IsSlice(v interface{}) bool
+// Wait for Ctrl + C
+func WaitForCtrlC()
 
-// Check if its a map.
-func IsMap(v interface{}) bool
-
-// Check if an interface{} is a map and contains the provided key.
-func HasKey(obj interface{}, key string) bool 
-
-// Return an interface{} key value if its a map
-func GetKey(obj interface{}, key string) interface{}
-
-// Convert any types to string
-func ToString(any interface{}) string
+// Check if output device is a terminal.
+func IsTty() bool
 ```
