@@ -6,7 +6,7 @@ import (
 )
 
 // Check if its a slice.
-func isSlice(v interface{}) bool {
+func IsSlice(v interface{}) bool {
 	if v == nil {
 		return false
 	}
@@ -14,12 +14,12 @@ func isSlice(v interface{}) bool {
 }
 
 // Check if its a map.
-func isMap(v interface{}) bool {
+func IsMap(v interface{}) bool {
 	return reflect.TypeOf(v).Kind() == reflect.Map
 }
 
 // Check if an interface{} is a map and contains the provided key.
-func hasKey(obj interface{}, key string) bool {
+func HasKey(obj interface{}, key string) bool {
 	if m, ok := obj.(map[string]interface{}); ok {
 		if _, found := m[key]; found {
 			return true
@@ -29,7 +29,7 @@ func hasKey(obj interface{}, key string) bool {
 }
 
 // Return an interface{} key value if its a map
-func getKey(obj interface{}, key string) interface{} {
+func GetKey(obj interface{}, key string) interface{} {
 	if m, ok := obj.(map[string]interface{}); ok {
 		if k, found := m[key]; found {
 			return k
@@ -39,6 +39,6 @@ func getKey(obj interface{}, key string) interface{} {
 }
 
 // Convert any types to string
-func toString(any interface{}) string {
+func ToString(any interface{}) string {
 	return fmt.Sprintf("%v", any)
 }
