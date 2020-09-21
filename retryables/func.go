@@ -29,9 +29,16 @@ func Retry(tries uint, delay time.Duration, fn func() (interface{}, error)) (int
 				err = errors.Wrap(err, fmt.Sprintf("failed on try: %d", tries))
 			}
 		}
-		_retryLog.WithFields(logging.LF{
+
+		entry := _retryLog.WithFields(logging.LF{
 			"fn": getFunctionName(fn),
-		}).Trace("fn failed, retrying in " + delay.String())
+		})
+
+		if lastError != nil {
+			entry = entry.WithField("error", lastError.Error())
+		}
+
+		entry.Trace("fn failed, retrying in " + delay.String())
 		time.Sleep(delay)
 		ret, lastError = fn()
 	}
