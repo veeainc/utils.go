@@ -1,4 +1,4 @@
-module bitbucket.org/veeafr/utils.go
+module github.com/veeainc/utils.go
 
 go 1.13
 

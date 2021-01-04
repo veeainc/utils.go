@@ -1,9 +1,10 @@
 package tasks
 
 import (
-	"bitbucket.org/veeafr/utils.go/logging"
 	"errors"
 	"sync"
+
+	"github.com/veeainc/utils.go/logging"
 )
 
 var _taskLog = logging.GetNamedLogger()
@@ -41,7 +42,7 @@ func (t *Task) Run(args ...interface{}) error {
 	go func() {
 		t.fn(t.stop, args...) // run in goroutine
 		_taskLog.Tracef("task %s is done", t.name)
-		t.wg.Done()           // after the execution, set as done
+		t.wg.Done() // after the execution, set as done
 	}()
 
 	return nil
