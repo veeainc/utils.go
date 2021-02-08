@@ -1,7 +1,7 @@
 # interfaces
 
 ```go
-import "bitbucket.org/veeafr/utils.go/interfaces"
+import "github.com/veeainc/utils.go/interfaces"
 ```
 
 ## Example

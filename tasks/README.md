@@ -1,7 +1,7 @@
 # tasks
 
 ```go
-import "bitbucket.org/veeafr/utils.go/tasks"
+import "github.com/veeainc/utils.go/tasks"
 ```
 
 The `Task` structure facilitates the management of Goroutine.

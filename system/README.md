@@ -1,7 +1,7 @@
 # system
 
 ```go
-import "bitbucket.org/veeafr/utils.go/system"
+import "github.com/veeainc/utils.go/system"
 ```
 
 

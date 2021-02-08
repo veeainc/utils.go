@@ -1,7 +1,7 @@
 # sync
 
 ```go
-import "bitbucket.org/veeafr/utils.go/sync"
+import "github.com/veeainc/utils.go/sync"
 ```
 
 A semaphore implementation using Go a go buffered channel.

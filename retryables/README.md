@@ -1,7 +1,7 @@
 # retryables
 
 ```go
-import "bitbucket.org/veeafr/utils.go/retryables"
+import "github.com/veeainc/utils.go/retryables"
 ```
 
 Some utilities to make a function retryable.

@@ -1,7 +1,7 @@
 # logging
 
 ```go
-import "bitbucket.org/veeafr/utils.go/logging"
+import "github.com/veeainc/utils.go/logging"
 ```
 
 Allow to retrieve configured and named logger.

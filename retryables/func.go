@@ -1,12 +1,13 @@
 package retryables
 
 import (
-	"bitbucket.org/veeafr/utils.go/logging"
 	"fmt"
-	"github.com/pkg/errors"
 	"reflect"
 	"runtime"
 	"time"
+
+	"github.com/pkg/errors"
+	"github.com/veeainc/utils.go/logging"
 )
 
 var _retryLog = logging.GetNamedLogger()

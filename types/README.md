@@ -1,7 +1,7 @@
 # types
 
 ```go
-import "bitbucket.org/veeafr/utils.go/types"
+import "github.com/veeainc/utils.go/types"
 ```
 
 
